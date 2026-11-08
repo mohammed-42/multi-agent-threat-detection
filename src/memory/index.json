@@ -1,0 +1,71 @@
+[
+  {
+    "report_id": "email_2026-04-16T08-07-33-60661700-00_2b528e82",
+    "agent": "EmailVerificationAgent",
+    "saved_at": "2026-04-16T08:07:33.606754+00:00",
+    "session_id": "standalone",
+    "verdict": "PHISHING",
+    "risk_score": 0.929,
+    "file": "memory\\email\\email_2026-04-16T08-07-33-60661700-00_2b528e82.json"
+  },
+  {
+    "report_id": "email_2026-04-16T09-59-42-86368400-00_63e678c9",
+    "agent": "EmailVerificationAgent",
+    "saved_at": "2026-04-16T09:59:42.863791+00:00",
+    "session_id": "standalone",
+    "verdict": "PHISHING",
+    "risk_score": 0.929,
+    "file": "memory\\email\\email_2026-04-16T09-59-42-86368400-00_63e678c9.json"
+  },
+  {
+    "report_id": "26f4c0afad57",
+    "generated_at": "2026-04-16T10:13:27.949928+00:00",
+    "level": "NONE",
+    "confidence": 0.2458,
+    "correlated": false,
+    "threat_type": "Phishing",
+    "agents": [
+      "EmailVerificationAgent"
+    ],
+    "n_entities": 0
+  },
+  {
+    "report_id": "email_2026-04-28T16-28-05-73978200-00_27b738e5",
+    "agent": "EmailVerificationAgent",
+    "saved_at": "2026-04-28T16:28:05.739888+00:00",
+    "session_id": "standalone",
+    "verdict": "PHISHING",
+    "risk_score": 0.929,
+    "file": "memory\\email\\email_2026-04-28T16-28-05-73978200-00_27b738e5.json"
+  },
+  {
+    "report_id": "email_2026-04-28T16-28-37-59342100-00_e52c2544",
+    "agent": "EmailVerificationAgent",
+    "saved_at": "2026-04-28T16:28:37.593505+00:00",
+    "session_id": "standalone",
+    "verdict": "SAFE",
+    "risk_score": 0.0075,
+    "file": "memory\\email\\email_2026-04-28T16-28-37-59342100-00_e52c2544.json"
+  },
+  {
+    "report_id": "email_2026-11-08T14-13-55-57794600-00_32953686",
+    "agent": "EmailVerificationAgent",
+    "saved_at": "2026-11-08T14:13:55.578154+00:00",
+    "session_id": "standalone",
+    "verdict": "PHISHING",
+    "risk_score": 0.932,
+    "file": "memory\\email\\email_2026-11-08T14-13-55-57794600-00_32953686.json"
+  },
+  {
+    "report_id": "65d4cac341a8",
+    "generated_at": "2026-11-08T14:14:20.891549+00:00",
+    "level": "NONE",
+    "confidence": 0.2464,
+    "correlated": false,
+    "threat_type": "phishing",
+    "agents": [
+      "EmailVerificationAgent"
+    ],
+    "n_entities": 0
+  }
+]

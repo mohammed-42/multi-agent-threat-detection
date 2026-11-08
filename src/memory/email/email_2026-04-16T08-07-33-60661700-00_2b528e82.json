@@ -1,0 +1,141 @@
+{
+  "risk_verdict": "PHISHING",
+  "risk_score": 0.929,
+  "recommended_action": "BLOCK",
+  "component_scores": {
+    "faiss": 1.0,
+    "regex": 1.0,
+    "dns": 0.66,
+    "llm": 0.98
+  },
+  "metadata": {
+    "sender_domain": "paypa1-support.com",
+    "reply_to": "",
+    "subject": "[URGENT] Your Account Has Been Suspended - Action Required",
+    "urls": [
+      "http://paypa1-secure-login.net"
+    ],
+    "has_html": false
+  },
+  "regex_analysis": {
+    "suspicious_keyword_hits": [
+      "urgent",
+      "suspended",
+      "urgent",
+      "suspended",
+      "verify",
+      "verify",
+      "immediately",
+      "verify",
+      "immediately",
+      "hours",
+      "account",
+      "account",
+      "account",
+      "account",
+      "login",
+      "account",
+      "login",
+      "credit card",
+      "social security",
+      "account",
+      "verify your"
+    ],
+    "brand_spoofing_hits": [],
+    "suspicious_urls": [
+      "http://paypa1-secure-login.net"
+    ],
+    "phone_numbers": []
+  },
+  "faiss_analysis": {
+    "top_k_results": [
+      {
+        "index": 2987,
+        "similarity": 0.8162,
+        "label": "1",
+        "snippet": "From: support@paypa1-alert.tk\nReply-To: customer-service@gmail.com\nSubject: Your PayPal Account Has Been Suspended\nDear customer,\nWe are writing to inform you that your PayPal account has been suspend"
+      },
+      {
+        "index": 1484,
+        "similarity": 0.81,
+        "label": "1",
+        "snippet": "From: support@paypaI.com Reply-To: helpdesk@update-account-8821.top Subject: Your Account Has Been Compromised\nDear User,\nYour account has been flagged for suspicious activity. Please click on this li"
+      },
+      {
+        "index": 1778,
+        "similarity": 0.7908,
+        "label": "1",
+        "snippet": "From: support@login.paypal.secure-verify.tk Reply-To: helpdesk@g00gle.com Subject: PayPal Account Security Alert\nDear PayPal user,\nOur system has detected suspicious activity on your PayPal account. W"
+      },
+      {
+        "index": 2277,
+        "similarity": 0.7902,
+        "label": "1",
+        "snippet": "From: security-alert@paypaI.com Reply-To: support@xk29d-verify.xyz Subject: Urgent: Your PayPal Account Will Be Suspended in 24 Hours\n\nDear valued customer,\n\nWe have detected suspicious activity on yo"
+      },
+      {
+        "index": 1495,
+        "similarity": 0.7786,
+        "label": "1",
+        "snippet": "From: security@paypaI.com Reply-To: helpdesk@g00gle.com Subject: PayPal Account Alert: Unusual Activity Detected\n\nDear PayPal customer,\n\nWe have detected some unusual activity on your PayPal account. "
+      }
+    ],
+    "phishing_ratio": 1.0,
+    "weighted_phishing_score": 1.0,
+    "avg_similarity": 0.7972,
+    "is_likely_phishing": true
+  },
+  "sentiment_analysis": {
+    "polarity": -0.142,
+    "subjectivity": 0.385,
+    "tone": "neutral"
+  },
+  "dns_validation": [
+    {
+      "valid": false,
+      "has_mx": false,
+      "has_spf": false,
+      "resolves": false,
+      "suspicious": true,
+      "reason": "Domain does not resolve",
+      "subdomain": "",
+      "domain": "paypa1-secure-login",
+      "suffix": "net",
+      "full_domain": "paypa1-secure-login.net"
+    },
+    {
+      "valid": false,
+      "has_mx": false,
+      "has_spf": false,
+      "resolves": false,
+      "suspicious": true,
+      "reason": "Domain does not resolve",
+      "domain": "paypa1-support.com",
+      "type": "sender"
+    }
+  ],
+  "llm_analysis": {
+    "step1_structural": "The sender domain 'paypa1-support.com' is suspicious and does not match the legitimate PayPal domain. The reply-to address 'recovery@paypa1-secure.net' also does not match the sender domain, indicating a potential phishing attempt.",
+    "step2_content": "The email contains urgent language and suspicious keywords such as 'suspended', 'verify', and 'immediately', which are common in phishing emails. The email also requests sensitive information such as credit card numbers and social security numbers.",
+    "step3_technical": "The email contains a suspicious URL 'http://paypa1-secure-login.net' that does not resolve to a legitimate PayPal domain. The DNS validation also indicates that the domain is suspicious and does not have a valid MX or SPF record.",
+    "step4_similarity": "The email is similar to known phishing emails in the vector DB, with a weighted phishing score of 1.000 and a phishing neighbor ratio of 1.00.",
+    "step5_sentiment": "The sentiment analysis indicates a neutral tone, but the language used is manipulative and urgent, which is a common trait of phishing emails.",
+    "step6_synthesis": "Combining all the signals, the email appears to be a phishing attempt, with a high risk of compromising the recipient's sensitive information.",
+    "risk_verdict": "PHISHING",
+    "confidence_score": 0.99,
+    "risk_score": 0.98,
+    "key_indicators": [
+      "suspicious sender domain",
+      "urgent language",
+      "suspicious URL"
+    ],
+    "justification": "The email exhibits multiple indicators of a phishing attempt, including a suspicious sender domain, urgent language, and a suspicious URL. The email also requests sensitive information, which is a common trait of phishing emails.",
+    "recommended_action": "BLOCK"
+  },
+  "llm_success": true,
+  "processing_time_sec": 4.53,
+  "saved_at": "2026-04-16T08:07:33.606754+00:00",
+  "agent": "EmailVerificationAgent",
+  "session_id": "standalone",
+  "report_id": "email_2026-04-16T08-07-33-60661700-00_2b528e82"
+}

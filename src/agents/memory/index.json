@@ -1,0 +1,14 @@
+[
+  {
+    "report_id": "ip_2026-04-16T10-13-08-51990200-00_a6ac9683",
+    "agent": "IPRangeAnalyzerAgent",
+    "saved_at": "2026-04-16T10:13:08.520232+00:00",
+    "session_id": "standalone",
+    "ip_range": "192.168.56.103",
+    "total_cves": 93,
+    "critical_hosts": [
+      "192.168.56.103"
+    ],
+    "file": "memory\\ip\\ip_2026-04-16T10-13-08-51990200-00_a6ac9683.json"
+  }
+]

@@ -1,0 +1,130 @@
+{
+  "risk_verdict": "SAFE",
+  "risk_score": 0.0075,
+  "recommended_action": "ALLOW",
+  "component_scores": {
+    "faiss": 0.0,
+    "regex": 0.0,
+    "dns": 0.0,
+    "llm": 0.05
+  },
+  "metadata": {
+    "sender_domain": "github.com",
+    "reply_to": "",
+    "subject": "Your monthly GitHub activity summary - March 2025",
+    "urls": [
+      "https://github.com",
+      "https://github.com"
+    ],
+    "has_html": false
+  },
+  "regex_analysis": {
+    "suspicious_keyword_hits": [],
+    "brand_spoofing_hits": [],
+    "suspicious_urls": [],
+    "phone_numbers": []
+  },
+  "faiss_analysis": {
+    "top_k_results": [
+      {
+        "index": 48,
+        "similarity": 0.7424,
+        "label": "0",
+        "snippet": "From: noreply@github.com\nReply-To: noreply@github.com\nSubject: Your Weekly Repository Update\nDear Developer,\nWe hope this email finds you well. This is a weekly update on your repository activity. You"
+      },
+      {
+        "index": 872,
+        "similarity": 0.741,
+        "label": "0",
+        "snippet": "From: noreply@github.com\nReply-To: noreply@github.com\nSubject: Your Weekly Repository Update\nDear Developer,\nWe hope this email finds you well. This is a weekly update on your repository activity. You"
+      },
+      {
+        "index": 391,
+        "similarity": 0.7038,
+        "label": "0",
+        "snippet": "From: noreply@github.com\nReply-To: noreply@github.com\nSubject: Your Weekly Repository Update\nDear Developer,\nWe hope this email finds you well. We wanted to take a moment to update you on the latest a"
+      },
+      {
+        "index": 1113,
+        "similarity": 0.6957,
+        "label": "0",
+        "snippet": "From: noreply@github.com\nReply-To: noreply@github.com\nSubject: Your Weekly Repository Update\nDear Developer,\nWe hope this email finds you well. We wanted to take a moment to update you on the latest d"
+      },
+      {
+        "index": 2369,
+        "similarity": 0.691,
+        "label": "0",
+        "snippet": "From: noreply@github.com\nReply-To: noreply@github.com\nSubject: Your Weekly GitHub Notifications\nDear Developer,\nWe hope this email finds you well. We wanted to take a moment to notify you of some impo"
+      }
+    ],
+    "phishing_ratio": 0.0,
+    "weighted_phishing_score": 0.0,
+    "avg_similarity": 0.7148,
+    "is_likely_phishing": false
+  },
+  "sentiment_analysis": {
+    "polarity": 0.071,
+    "subjectivity": 0.374,
+    "tone": "neutral"
+  },
+  "dns_validation": [
+    {
+      "valid": true,
+      "has_mx": true,
+      "has_spf": true,
+      "resolves": true,
+      "suspicious": false,
+      "reason": "",
+      "subdomain": "",
+      "domain": "github",
+      "suffix": "com",
+      "full_domain": "github.com"
+    },
+    {
+      "valid": true,
+      "has_mx": true,
+      "has_spf": true,
+      "resolves": true,
+      "suspicious": false,
+      "reason": "",
+      "subdomain": "",
+      "domain": "github",
+      "suffix": "com",
+      "full_domain": "github.com"
+    },
+    {
+      "valid": true,
+      "has_mx": true,
+      "has_spf": true,
+      "resolves": true,
+      "suspicious": false,
+      "reason": "",
+      "domain": "github.com",
+      "type": "sender"
+    }
+  ],
+  "llm_analysis": {
+    "step1_structural": "The sender domain is github.com, which is a legitimate domain. However, the reply-to field is empty, which could be a potential indicator of phishing. The email does not contain HTML content, which reduces the risk of phishing.",
+    "step2_content": "The email content does not contain any suspicious keywords, brand impersonation, or phone numbers. The language used is neutral and does not convey a sense of urgency.",
+    "step3_technical": "The DNS validation shows that the domain github.com resolves correctly and has a valid MX and SPF record. The URLs embedded in the email are legitimate GitHub URLs.",
+    "step4_similarity": "The email is similar to the retrieved similar emails from the vector DB, with a similarity score of 0.742 and 0.741. This suggests that the email is likely legitimate.",
+    "step5_sentiment": "The sentiment analysis shows a neutral tone with a polarity of 0.071 and subjectivity of 0.374. This suggests that the email is not attempting to manipulate the recipient.",
+    "step6_synthesis": "Combining all the signals, the email appears to be a legitimate GitHub notification email.",
+    "risk_verdict": "SAFE",
+    "confidence_score": 0.95,
+    "risk_score": 0.05,
+    "key_indicators": [
+      "Legitimate sender domain",
+      "Neutral tone",
+      "Valid DNS records"
+    ],
+    "justification": "The email is a legitimate GitHub notification email, with a valid sender domain, neutral tone, and valid DNS records. The similarity with retrieved emails from the vector DB also supports this conclusion.",
+    "recommended_action": "ALLOW"
+  },
+  "llm_success": true,
+  "processing_time_sec": 4.23,
+  "saved_at": "2026-04-28T16:28:37.593505+00:00",
+  "agent": "EmailVerificationAgent",
+  "session_id": "standalone",
+  "report_id": "email_2026-04-28T16-28-37-59342100-00_e52c2544"
+}

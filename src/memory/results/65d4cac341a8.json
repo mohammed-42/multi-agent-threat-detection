@@ -1,0 +1,67 @@
+{
+  "correlated": false,
+  "confidence": 0.2464,
+  "correlation_level": "NONE",
+  "matched_entities": [],
+  "temporal_overlap": false,
+  "temporal_window_secs": 3600,
+  "narrative": "[FALLBACK \u2014 LLM unavailable]\n\nAgents: EmailVerificationAgent\n\nVerdicts:\n  \u2022 EmailVerificationAgent: PHISHING (risk=9.32/10)\n\nShared indicators: none\nConfidence: 24.6% (NONE)\n\nManual SOC analyst review required for full narrative.",
+  "recommendations": [
+    "Block all flagged IPs at the firewall immediately.",
+    "Quarantine flagged emails and notify affected users.",
+    "Patch all identified CVEs \u2014 CRITICAL severity first.",
+    "Enable enhanced logging on flagged hosts.",
+    "Escalate to Tier-2 analyst for manual correlation.",
+    "Search SIEM for matched IOCs over last 72 hours.",
+    "Update detection rules with confirmed indicators."
+  ],
+  "involved_agents": [
+    "EmailVerificationAgent"
+  ],
+  "threat_type": "phishing",
+  "attack_vector": "EmailVerification",
+  "evidence_traces": [
+    {
+      "agent": "EmailVerificationAgent",
+      "verdict": "PHISHING",
+      "risk_score": 9.32,
+      "timestamp": "2026-11-08T14:14:11.274066+00:00",
+      "summary": "Verdict=PHISHING risk=9.3/10 action=BLOCK llm=N/A"
+    }
+  ],
+  "entity_map": {
+    "EmailVerificationAgent": {
+      "domain": [
+        "app1e.com",
+        "g00gle-security-alert.top",
+        "go0gle.com",
+        "login.paypal.secure-verify.tk",
+        "paypa1-secure.net",
+        "paypa1.com",
+        "paypai.com",
+        "rn1crosoft.com",
+        "update-account-8821.top",
+        "xk29d-verify.xyz"
+      ],
+      "url": [
+        "http://paypa1-secure.net",
+        "https://login.paypal.secure-verify.tk/verify"
+      ],
+      "email_addr": [
+        "account@paypai.com",
+        "alert@paypa1.com",
+        "customer-service@app1e.com",
+        "help@xk29d-verify.xyz",
+        "incident-response@update-account-8821.top",
+        "security-alert@paypa1.com",
+        "security@go0gle.com",
+        "services@g00gle-security-alert.top",
+        "support@paypa1.com",
+        "support@rn1crosoft.com"
+      ]
+    }
+  },
+  "false_positive_indicators": [],
+  "generated_at": "2026-11-08T14:14:20.891549+00:00",
+  "report_id": "65d4cac341a8"
+}

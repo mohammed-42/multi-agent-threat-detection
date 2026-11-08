@@ -1,0 +1,121 @@
+{
+  "risk_verdict": "PHISHING",
+  "risk_score": 0.932,
+  "recommended_action": "BLOCK",
+  "component_scores": {
+    "faiss": 1.0,
+    "regex": 1.0,
+    "dns": 0.66,
+    "llm": 1.0
+  },
+  "metadata": {
+    "sender_domain": "paypa1.com",
+    "reply_to": "",
+    "subject": "Urgent: Verify your account immediately",
+    "urls": [
+      "http://paypa1-secure.net"
+    ],
+    "has_html": false
+  },
+  "regex_analysis": {
+    "suspicious_keyword_hits": [
+      "urgent",
+      "verify",
+      "immediately",
+      "urgent",
+      "verify",
+      "immediately",
+      "verify",
+      "account",
+      "account",
+      "account",
+      "login",
+      "verify your",
+      "verify your"
+    ],
+    "brand_spoofing_hits": [
+      {
+        "domain": "paypa1.com",
+        "impersonates": "paypal"
+      }
+    ],
+    "suspicious_urls": [
+      "http://paypa1-secure.net"
+    ],
+    "phone_numbers": []
+  },
+  "faiss_analysis": {
+    "top_k_results": [
+      {
+        "index": 1588,
+        "similarity": 0.7877,
+        "label": "1",
+        "snippet": "From: security-alert@paypa1.com Reply-To: support@rn1crosoft.com Subject: Action Required: Your Account Is Locked\n\nDear PayPal Customer,\n\nWe have detected some unusual activity on your account, and as"
+      },
+      {
+        "index": 460,
+        "similarity": 0.7659,
+        "label": "1",
+        "snippet": "From: account@paypaI.com Reply-To: services@g00gle-security-alert.top Subject: Account Locked: Verify Now, https://login.paypal.secure-verify.tk/verify Your account has been locked due to suspicious a"
+      },
+      {
+        "index": 1142,
+        "similarity": 0.7656,
+        "label": "1",
+        "snippet": "From: security@go0gle.com Reply-To: incident-response@update-account-8821.top Subject: Security Alert - Immediate Action Required\nDear All,\nWe have detected suspicious activity on our network. To prot"
+      },
+      {
+        "index": 2300,
+        "similarity": 0.7533,
+        "label": "1",
+        "snippet": "From: support@paypa1.com Reply-To: help@xk29d-verify.xyz Subject: Urgent: Your Account Will Be Locked In 24 Hours\nDear PayPal customer,\nWe have noticed that your account has been accessed from an unkn"
+      },
+      {
+        "index": 137,
+        "similarity": 0.7515,
+        "label": "1",
+        "snippet": "From: alert@paypa1.com Reply-To: customer-service@app1e.com Subject: Urgent: Your PayPal Account Will Be Locked in 24 Hours\nWe have detected unusual activity on your account and as a security measure,"
+      }
+    ],
+    "phishing_ratio": 1.0,
+    "weighted_phishing_score": 1.0,
+    "avg_similarity": 0.7648,
+    "is_likely_phishing": true
+  },
+  "sentiment_analysis": {
+    "polarity": -0.167,
+    "subjectivity": 0.333,
+    "tone": "neutral"
+  },
+  "dns_validation": [
+    {
+      "valid": false,
+      "has_mx": false,
+      "has_spf": false,
+      "resolves": false,
+      "suspicious": true,
+      "reason": "Domain does not resolve",
+      "subdomain": "",
+      "domain": "paypa1-secure",
+      "suffix": "net",
+      "full_domain": "paypa1-secure.net"
+    },
+    {
+      "valid": false,
+      "has_mx": false,
+      "has_spf": false,
+      "resolves": false,
+      "suspicious": true,
+      "reason": "Domain does not resolve",
+      "domain": "paypa1.com",
+      "type": "sender"
+    }
+  ],
+  "llm_analysis": {},
+  "llm_success": false,
+  "processing_time_sec": 7.85,
+  "saved_at": "2026-11-08T14:13:55.578154+00:00",
+  "agent": "EmailVerificationAgent",
+  "session_id": "standalone",
+  "report_id": "email_2026-11-08T14-13-55-57794600-00_32953686"
+}

@@ -1,0 +1,63 @@
+{
+  "correlated": false,
+  "confidence": 0.2458,
+  "correlation_level": "NONE",
+  "matched_entities": [],
+  "temporal_overlap": false,
+  "temporal_window_secs": 3600,
+  "narrative": "A phishing email was detected with a high risk score of 9.3/10, as reported by the EmailVerificationAgent. The email contains suspicious keywords, a spoofed sender domain, and a suspicious URL.",
+  "recommendations": [
+    "Block the email",
+    "Warn the user about the phishing attempt",
+    "Monitor for similar emails"
+  ],
+  "involved_agents": [
+    "EmailVerificationAgent"
+  ],
+  "threat_type": "Phishing",
+  "attack_vector": "Email",
+  "evidence_traces": [
+    {
+      "agent": "EmailVerificationAgent",
+      "verdict": "PHISHING",
+      "risk_score": 9.290000000000001,
+      "timestamp": "2026-04-16T10:13:25.312257+00:00",
+      "summary": "Verdict=PHISHING risk=9.3/10 action=BLOCK llm=The email is highly suspicious and exhibits multiple indicators of a phishing attempt, including a suspicious sender dom"
+    }
+  ],
+  "entity_map": {
+    "EmailVerificationAgent": {
+      "domain": [
+        "gmail.com",
+        "micosoft.com",
+        "paypa1-alert.tk",
+        "paypa1-secure.com",
+        "paypa1-verify-login.xyz",
+        "paypai.com",
+        "secure-login-28812.click",
+        "update-account-8821.top",
+        "xk29d-verify.xyz"
+      ],
+      "url": [
+        "http://paypa1-verify-login.xyz"
+      ],
+      "email_addr": [
+        "customer-service@gmail.com",
+        "customer-service@micosoft.com",
+        "customer-support@secure-login-28812.click",
+        "helpdesk@update-account-8821.top",
+        "notification@paypai.com",
+        "security-alert@paypai.com",
+        "support@paypa1-alert.tk",
+        "support@paypai.com",
+        "support@xk29d-verify.xyz"
+      ],
+      "user": [
+        "suspicious"
+      ]
+    }
+  },
+  "false_positive_indicators": [],
+  "generated_at": "2026-04-16T10:13:27.949928+00:00",
+  "report_id": "26f4c0afad57"
+}
